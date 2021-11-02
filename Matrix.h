@@ -21,7 +21,7 @@ public:
     CVector setMatrix(std::vector<CVector> vector);
 
 
-    Matrix inverse_matrix(Matrix matrix) const;
+    Matrix inverse_matrix(const Matrix& matrix) const;
 
 
     int getColumns() const;

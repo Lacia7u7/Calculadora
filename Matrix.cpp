@@ -113,16 +113,17 @@ Matrix Matrix::operator/(Matrix complex) const {
     return Matrix(std::vector());
 }
 
-Matrix Matrix::inverse_matrix(Matrix matrix) const {
+Matrix Matrix::inverse_matrix(const Matrix& matrix) const {
     Matrix diag=Matrix::diagonalMatrix(getRows(), getColumns());
     Matrix result=Matrix(this->matrix);
-    for (int row= 0; row < getRows(); ++row) {
+    for (int row= 0; row < getRows(); ++row) {//recorremos las filas
         const CNumber &diagI = getValueAt(row, row);
         result.setValueAt(row,row,CNumber(1,0));
-        for(int col=0; col<getColumns(); col++){
+        for(int col=0; col<getColumns(); col++){// hacemos 1 el valor actual de la diagonal
             diag.setValueAt(row,col,diag.getValueAt(row,col)/ diagI);
             result.setValueAt(row,col,result.getValueAt(row,col)/ diagI);
         }
+        //Convertimos en 0 toda la columna de la posicion de la diagonal actual
         for (int rowI = 0; rowI < getRows(); ++rowI) {
             if(row != rowI){
                 const CNumber &multiplier =result.getValueAt(rowI,row);
