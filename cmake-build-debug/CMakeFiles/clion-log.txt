@@ -1,0 +1,4 @@
+"E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/cmake-build-debug

@@ -1,0 +1,82 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/ArithmeticError.h
+exception
+-
+
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/CNumber.h
+ostream
+-
+Number.h
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/Number.h
+
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/CalculatorError.h
+stack
+-
+string
+-
+vector
+-
+
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/Number.h
+ostream
+-
+
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/main.cpp
+main.h
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/main.h
+iostream
+-
+vector
+-
+pthread.h
+-
+fstream
+-
+CNumber.h
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/CNumber.h
+string_utilities.h
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/string_utilities.h
+queue
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/queue
+map
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/map
+ArithmeticError.h
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/ArithmeticError.h
+cmath
+-
+complex
+-
+algorithm
+-
+regex
+-
+
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/main.h
+cstring
+-
+vector
+-
+map
+-
+string
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/string
+CNumber.h
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/CNumber.h
+CalculatorError.h
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/CalculatorError.h
+
+E:/Data/UP/3ER SEMESTRE/Programacion Avanzada I/Proyecto2Parcial/Calculadora/string_utilities.h
+vector
+-
+string
+-
+cstring
+-
+
