@@ -12,6 +12,7 @@ private:
     std::string error;
 public:
     ArithmeticError();
+    ArithmeticError(std::string error);
 
     const std::string &getError() const;
 

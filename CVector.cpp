@@ -1,28 +1,27 @@
 //
 // Created by Laptop on 10/10/2021.
 
-#include "Vector.h"
+#include "CVector.h"
 #include "main.h"
 #include "instanceof.h"
-#include "../../../../../Downloads/CNumber.h"
 #include "CalculatorError.h"
-
+#include "CNumber.h"
 
 //
 
-Vector::Vector() {
+CVector::CVector() {
 
 }
 
-Vector::Vector(std::vector<CNumber> anotherVec) {
+CVector::CVector(std::vector<CNumber> anotherVec) {
 
 }
 
-std::vector<CNumber> Vector::getVector() {
+std::vector<CNumber> CVector::getVector() {
     return std::vector<CNumber>();
 }
 
-Vector Vector::setVector(std::vector<CNumber> anotherVector) {
+CVector CVector::setVector(std::vector<CNumber> anotherVector) {
     if(anotherVector.size()!=vec.size()){
         throw "Dimensions of another vector is different of our vector";
     }else{
@@ -33,7 +32,7 @@ Vector Vector::setVector(std::vector<CNumber> anotherVector) {
     return *this;
 }
 
-Vector Vector::setValueAt(int idx, CNumber value) {
+CVector CVector::setValueAt(int idx, CNumber value) {
     if(idx<0 || idx>=vec.size()){
         throw "Index error";
     }else{
@@ -42,7 +41,7 @@ Vector Vector::setValueAt(int idx, CNumber value) {
     return *this;
 }
 
-CNumber Vector::getMagnitude() {
+CNumber CVector::getMagnitude() {
     string expr="(";
     for (int i = 0; i < vec.size()-1; ++i) {
         expr.append("(").append(vec[i].toString()).append(")^(2)+");
@@ -52,32 +51,32 @@ CNumber Vector::getMagnitude() {
     return *computeExpression(expr);
 }
 
-bool Vector::operator<(const Vector &rhs) const {
+bool CVector::operator<(const CVector &rhs) const {
     return vec < rhs.vec;
 }
 
-bool Vector::operator>(const Vector &rhs) const {
+bool CVector::operator>(const CVector &rhs) const {
     return rhs < *this;
 }
 
-bool Vector::operator<=(const Vector &rhs) const {
+bool CVector::operator<=(const CVector &rhs) const {
     return !(rhs < *this);
 }
 
-bool Vector::operator>=(const Vector &rhs) const {
+bool CVector::operator>=(const CVector &rhs) const {
     return !(*this < rhs);
 }
 
-bool Vector::operator==(const Vector &rhs) const {
+bool CVector::operator==(const CVector &rhs) const {
     return vec == rhs.vec;
 }
 
-bool Vector::operator!=(const Vector &rhs) const {
+bool CVector::operator!=(const CVector &rhs) const {
     return !(rhs == *this);
 }
 
-Vector Vector::operator+(const Vector &vectorToPlus) const {
-    Vector result;
+CVector CVector::operator+(const CVector &vectorToPlus) const {
+    CVector result;
     if(vectorToPlus.getSize()!= getSize()){
         throw "Dimensions of another vector is different of our vector";
     }
@@ -87,39 +86,39 @@ Vector Vector::operator+(const Vector &vectorToPlus) const {
     return result;
 }
 
-Vector Vector::operator-(const Vector &vectorToPlus) const {
+CVector CVector::operator-(const CVector &vectorToPlus) const {
     return (*this+(vectorToPlus*-1));
 }
 
-int Vector::getSize() const {
+int CVector::getSize() const {
     return vec.size();
 }
 
-CNumber Vector::operator[](int index) const {
+CNumber CVector::operator[](int index) const {
     return vec[index];
 }
 
-Vector Vector::operator*(int k) const {
+CVector CVector::operator*(int k) const {
     CNumber kComplex=*CNumber::get0CNumber()->setR(k)->setI(0);
     return *this*kComplex;
 }
 
-Vector Vector::operator*(CNumber complex) const {
-    Vector result;
+CVector CVector::operator*(CNumber complex) const {
+    CVector result;
     for (int i = 0; i < getSize(); ++i) {
         result.setValueAt(i,vec[i]*complex);
     }
     return result;
 }
 
-Vector Vector::operator/(CNumber complex) const {
+CVector CVector::operator/(CNumber complex) const {
     string expr="1/(";
     expr.append(complex.toString()).append(")");
-    Vector res= *this**computeExpression(expr);
+    CVector res= *this**computeExpression(expr);
     return res;
 }
 
-CNumber Vector::pointProduct(Vector anotherVector) {
+CNumber CVector::pointProduct(CVector anotherVector) {
     CNumber result=*CNumber::get0CNumber();
     if(anotherVector.getSize()!=vec.size()){
         throw "Dimensions of another vector is different of our vector";
@@ -129,4 +128,17 @@ CNumber Vector::pointProduct(Vector anotherVector) {
         }
     }
     return result;
+}
+
+std::string CVector::toString(bool addTAG) const{
+    string result;
+    if(addTAG){
+        result+="vec<";
+    }else{
+        result+="<";
+    }
+    for (int i = 0; i < getSize() - 1; ++i) {
+        result+= (*this)[i].toString() + ",";
+    }
+    result+=(*this)[getSize()-1].toString()+">";
 }
