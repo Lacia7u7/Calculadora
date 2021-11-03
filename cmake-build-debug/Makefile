@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora"
+CMAKE_SOURCE_DIR = C:\Users\Laptop\CLionProjects\Calculadora3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Par
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,30 @@ CNumber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/CNumber.cpp.s
 .PHONY : CNumber.cpp.s
 
+CVector.obj: CVector.cpp.obj
+.PHONY : CVector.obj
+
+# target to build an object file
+CVector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/CVector.cpp.obj
+.PHONY : CVector.cpp.obj
+
+CVector.i: CVector.cpp.i
+.PHONY : CVector.i
+
+# target to preprocess a source file
+CVector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/CVector.cpp.i
+.PHONY : CVector.cpp.i
+
+CVector.s: CVector.cpp.s
+.PHONY : CVector.s
+
+# target to generate assembly for a file
+CVector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/CVector.cpp.s
+.PHONY : CVector.cpp.s
+
 CalculatorError.obj: CalculatorError.cpp.obj
 .PHONY : CalculatorError.obj
 
@@ -199,6 +223,30 @@ CalculatorError.s: CalculatorError.cpp.s
 CalculatorError.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/CalculatorError.cpp.s
 .PHONY : CalculatorError.cpp.s
+
+Matrix.obj: Matrix.cpp.obj
+.PHONY : Matrix.obj
+
+# target to build an object file
+Matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/Matrix.cpp.obj
+.PHONY : Matrix.cpp.obj
+
+Matrix.i: Matrix.cpp.i
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
 
 Number.obj: Number.cpp.obj
 .PHONY : Number.obj
@@ -311,9 +359,15 @@ help:
 	@echo ... CNumber.obj
 	@echo ... CNumber.i
 	@echo ... CNumber.s
+	@echo ... CVector.obj
+	@echo ... CVector.i
+	@echo ... CVector.s
 	@echo ... CalculatorError.obj
 	@echo ... CalculatorError.i
 	@echo ... CalculatorError.s
+	@echo ... Matrix.obj
+	@echo ... Matrix.i
+	@echo ... Matrix.s
 	@echo ... Number.obj
 	@echo ... Number.i
 	@echo ... Number.s

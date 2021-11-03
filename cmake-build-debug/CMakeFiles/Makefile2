@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora"
+CMAKE_SOURCE_DIR = C:\Users\Laptop\CLionProjects\Calculadora3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/Calculadora.dir/clean
 CMakeFiles/Calculadora.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Calculadora.dir\build.make CMakeFiles/Calculadora.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target Calculadora"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Calculadora"
 .PHONY : CMakeFiles/Calculadora.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Calculadora.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Calculadora.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Calculadora.dir/rule
 
 # Convenience name for target.

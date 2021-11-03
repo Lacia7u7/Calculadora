@@ -145,12 +145,13 @@ Matrix Matrix::inverse_matrix(const Matrix& matrix) const {
                 }
             }else{
                 if(currentVal.getReal() != 0){
-                    //ocupamos otro for que maneje las filas ademas, no solo las columnas
-                    for(int h=0; h<getRows(); h++){//este va a recorrer las filas
-                        for(int k=0; k<getColumns(); k++){//este todas las columnas
-                            if(h!=i)//si h es diferente a i, quiere decir que es diferente a la fila donde hicimos el ultimo 1 de la diagonal
-                                //entonces en esta fila vamos a tener que hacer las restas donde el de a
-                            diag.setValueAt(h,j, getValueAt(i-1,j))
+                    for(int h=0; h<getRows(); h++){
+                        for(int k=0; k<getColumns(); k++){
+                            if(h!=i){//no estoy en la fila que cambie por ultima vez a uno
+                                const CNumber &multi = result.getValueAt(h,j)/result.getValueAt(i,j);//que debo multiplicar para quitar el otro
+                                result.setValueAt(h,k,result.getValueAt(h,j)-multi);
+                                diag.setValueAt(h,k,diag.getValueAt(h,j)-multi)
+                            }
                         }
                     }
                     diag.setValueAt(i,j, diag.getValueAt(i,j)-diag.getValueAt(i,j));
@@ -159,7 +160,7 @@ Matrix Matrix::inverse_matrix(const Matrix& matrix) const {
             }
         }
     }
-    return Matrix(std::vector());
+    return diag;
 }
 Matrix Matrix::operator*(Matrix matrix) const { 
     if(getColumns()!=matrix.getRows()){

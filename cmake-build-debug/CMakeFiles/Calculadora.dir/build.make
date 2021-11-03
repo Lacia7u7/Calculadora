@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\Programas\C\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora"
+CMAKE_SOURCE_DIR = C:\Users\Laptop\CLionProjects\Calculadora3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Calculadora.dir/depend.make
@@ -67,94 +67,120 @@ include CMakeFiles/Calculadora.dir/flags.make
 
 CMakeFiles/Calculadora.dir/main.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
 CMakeFiles/Calculadora.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Calculadora.dir/main.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\main.cpp.obj -c "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Calculadora.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\main.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\main.cpp
 
 CMakeFiles/Calculadora.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/main.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\main.cpp" > CMakeFiles\Calculadora.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\main.cpp > CMakeFiles\Calculadora.dir\main.cpp.i
 
 CMakeFiles/Calculadora.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/main.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\main.cpp" -o CMakeFiles\Calculadora.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\main.cpp -o CMakeFiles\Calculadora.dir\main.cpp.s
 
 CMakeFiles/Calculadora.dir/Number.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
 CMakeFiles/Calculadora.dir/Number.cpp.obj: ../Number.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Calculadora.dir/Number.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\Number.cpp.obj -c "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\Number.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Calculadora.dir/Number.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\Number.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\Number.cpp
 
 CMakeFiles/Calculadora.dir/Number.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/Number.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\Number.cpp" > CMakeFiles\Calculadora.dir\Number.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\Number.cpp > CMakeFiles\Calculadora.dir\Number.cpp.i
 
 CMakeFiles/Calculadora.dir/Number.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/Number.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\Number.cpp" -o CMakeFiles\Calculadora.dir\Number.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\Number.cpp -o CMakeFiles\Calculadora.dir\Number.cpp.s
 
 CMakeFiles/Calculadora.dir/CNumber.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
 CMakeFiles/Calculadora.dir/CNumber.cpp.obj: ../CNumber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Calculadora.dir/CNumber.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\CNumber.cpp.obj -c "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\CNumber.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Calculadora.dir/CNumber.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\CNumber.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\CNumber.cpp
 
 CMakeFiles/Calculadora.dir/CNumber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/CNumber.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\CNumber.cpp" > CMakeFiles\Calculadora.dir\CNumber.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\CNumber.cpp > CMakeFiles\Calculadora.dir\CNumber.cpp.i
 
 CMakeFiles/Calculadora.dir/CNumber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/CNumber.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\CNumber.cpp" -o CMakeFiles\Calculadora.dir\CNumber.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\CNumber.cpp -o CMakeFiles\Calculadora.dir\CNumber.cpp.s
 
 CMakeFiles/Calculadora.dir/instanceof.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
 CMakeFiles/Calculadora.dir/instanceof.cpp.obj: ../instanceof.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Calculadora.dir/instanceof.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\instanceof.cpp.obj -c "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\instanceof.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Calculadora.dir/instanceof.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\instanceof.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\instanceof.cpp
 
 CMakeFiles/Calculadora.dir/instanceof.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/instanceof.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\instanceof.cpp" > CMakeFiles\Calculadora.dir\instanceof.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\instanceof.cpp > CMakeFiles\Calculadora.dir\instanceof.cpp.i
 
 CMakeFiles/Calculadora.dir/instanceof.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/instanceof.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\instanceof.cpp" -o CMakeFiles\Calculadora.dir\instanceof.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\instanceof.cpp -o CMakeFiles\Calculadora.dir\instanceof.cpp.s
 
 CMakeFiles/Calculadora.dir/string_utilities.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
 CMakeFiles/Calculadora.dir/string_utilities.cpp.obj: ../string_utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Calculadora.dir/string_utilities.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\string_utilities.cpp.obj -c "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\string_utilities.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Calculadora.dir/string_utilities.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\string_utilities.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\string_utilities.cpp
 
 CMakeFiles/Calculadora.dir/string_utilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/string_utilities.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\string_utilities.cpp" > CMakeFiles\Calculadora.dir\string_utilities.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\string_utilities.cpp > CMakeFiles\Calculadora.dir\string_utilities.cpp.i
 
 CMakeFiles/Calculadora.dir/string_utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/string_utilities.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\string_utilities.cpp" -o CMakeFiles\Calculadora.dir\string_utilities.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\string_utilities.cpp -o CMakeFiles\Calculadora.dir\string_utilities.cpp.s
 
 CMakeFiles/Calculadora.dir/CalculatorError.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
 CMakeFiles/Calculadora.dir/CalculatorError.cpp.obj: ../CalculatorError.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Calculadora.dir/CalculatorError.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\CalculatorError.cpp.obj -c "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\CalculatorError.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Calculadora.dir/CalculatorError.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\CalculatorError.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\CalculatorError.cpp
 
 CMakeFiles/Calculadora.dir/CalculatorError.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/CalculatorError.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\CalculatorError.cpp" > CMakeFiles\Calculadora.dir\CalculatorError.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\CalculatorError.cpp > CMakeFiles\Calculadora.dir\CalculatorError.cpp.i
 
 CMakeFiles/Calculadora.dir/CalculatorError.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/CalculatorError.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\CalculatorError.cpp" -o CMakeFiles\Calculadora.dir\CalculatorError.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\CalculatorError.cpp -o CMakeFiles\Calculadora.dir\CalculatorError.cpp.s
 
 CMakeFiles/Calculadora.dir/ArithmeticError.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
 CMakeFiles/Calculadora.dir/ArithmeticError.cpp.obj: ../ArithmeticError.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Calculadora.dir/ArithmeticError.cpp.obj"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\ArithmeticError.cpp.obj -c "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\ArithmeticError.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Calculadora.dir/ArithmeticError.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\ArithmeticError.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\ArithmeticError.cpp
 
 CMakeFiles/Calculadora.dir/ArithmeticError.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/ArithmeticError.cpp.i"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\ArithmeticError.cpp" > CMakeFiles\Calculadora.dir\ArithmeticError.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\ArithmeticError.cpp > CMakeFiles\Calculadora.dir\ArithmeticError.cpp.i
 
 CMakeFiles/Calculadora.dir/ArithmeticError.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/ArithmeticError.cpp.s"
-	C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\ArithmeticError.cpp" -o CMakeFiles\Calculadora.dir\ArithmeticError.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\ArithmeticError.cpp -o CMakeFiles\Calculadora.dir\ArithmeticError.cpp.s
+
+CMakeFiles/Calculadora.dir/Matrix.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
+CMakeFiles/Calculadora.dir/Matrix.cpp.obj: ../Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Calculadora.dir/Matrix.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\Matrix.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\Matrix.cpp
+
+CMakeFiles/Calculadora.dir/Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/Matrix.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\Matrix.cpp > CMakeFiles\Calculadora.dir\Matrix.cpp.i
+
+CMakeFiles/Calculadora.dir/Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/Matrix.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\Matrix.cpp -o CMakeFiles\Calculadora.dir\Matrix.cpp.s
+
+CMakeFiles/Calculadora.dir/CVector.cpp.obj: CMakeFiles/Calculadora.dir/flags.make
+CMakeFiles/Calculadora.dir/CVector.cpp.obj: ../CVector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Calculadora.dir/CVector.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Calculadora.dir\CVector.cpp.obj -c C:\Users\Laptop\CLionProjects\Calculadora3\CVector.cpp
+
+CMakeFiles/Calculadora.dir/CVector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Calculadora.dir/CVector.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Laptop\CLionProjects\Calculadora3\CVector.cpp > CMakeFiles\Calculadora.dir\CVector.cpp.i
+
+CMakeFiles/Calculadora.dir/CVector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Calculadora.dir/CVector.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Laptop\CLionProjects\Calculadora3\CVector.cpp -o CMakeFiles\Calculadora.dir\CVector.cpp.s
 
 # Object files for target Calculadora
 Calculadora_OBJECTS = \
@@ -164,7 +190,9 @@ Calculadora_OBJECTS = \
 "CMakeFiles/Calculadora.dir/instanceof.cpp.obj" \
 "CMakeFiles/Calculadora.dir/string_utilities.cpp.obj" \
 "CMakeFiles/Calculadora.dir/CalculatorError.cpp.obj" \
-"CMakeFiles/Calculadora.dir/ArithmeticError.cpp.obj"
+"CMakeFiles/Calculadora.dir/ArithmeticError.cpp.obj" \
+"CMakeFiles/Calculadora.dir/Matrix.cpp.obj" \
+"CMakeFiles/Calculadora.dir/CVector.cpp.obj"
 
 # External object files for target Calculadora
 Calculadora_EXTERNAL_OBJECTS =
@@ -176,11 +204,13 @@ Calculadora.exe: CMakeFiles/Calculadora.dir/instanceof.cpp.obj
 Calculadora.exe: CMakeFiles/Calculadora.dir/string_utilities.cpp.obj
 Calculadora.exe: CMakeFiles/Calculadora.dir/CalculatorError.cpp.obj
 Calculadora.exe: CMakeFiles/Calculadora.dir/ArithmeticError.cpp.obj
+Calculadora.exe: CMakeFiles/Calculadora.dir/Matrix.cpp.obj
+Calculadora.exe: CMakeFiles/Calculadora.dir/CVector.cpp.obj
 Calculadora.exe: CMakeFiles/Calculadora.dir/build.make
 Calculadora.exe: CMakeFiles/Calculadora.dir/linklibs.rsp
 Calculadora.exe: CMakeFiles/Calculadora.dir/objects1.rsp
 Calculadora.exe: CMakeFiles/Calculadora.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Calculadora.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Calculadora.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Calculadora.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -192,6 +222,6 @@ CMakeFiles/Calculadora.dir/clean:
 .PHONY : CMakeFiles/Calculadora.dir/clean
 
 CMakeFiles/Calculadora.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora" "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora" "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug" "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug" "E:\Data\UP\3ER SEMESTRE\Programacion Avanzada I\Proyecto2Parcial\Calculadora\cmake-build-debug\CMakeFiles\Calculadora.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Laptop\CLionProjects\Calculadora3 C:\Users\Laptop\CLionProjects\Calculadora3 C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug C:\Users\Laptop\CLionProjects\Calculadora3\cmake-build-debug\CMakeFiles\Calculadora.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Calculadora.dir/depend
 
