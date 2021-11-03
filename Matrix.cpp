@@ -118,7 +118,7 @@ Matrix Matrix::inverse_matrix(const Matrix& matrix) const {
     Matrix result=Matrix(this->matrix);
     for (int row= 0; row < getRows(); ++row) {//recorremos las filas
         const CNumber &diagI = getValueAt(row, row);
-        result.setValueAt(row,row,CNumber(1,0));
+        result.setValueAt(row,row,*CNumber().setR(1)->setI(0));
         for(int col=0; col<getColumns(); col++){// hacemos 1 el valor actual de la diagonal
             diag.setValueAt(row,col,diag.getValueAt(row,col)/ diagI);
             result.setValueAt(row,col,result.getValueAt(row,col)/ diagI);
@@ -130,32 +130,6 @@ Matrix Matrix::inverse_matrix(const Matrix& matrix) const {
                 for (int colI = 0; colI < getColumns() ; ++colI) {
                     diag.setValueAt(rowI,colI,diag.getValueAt(rowI,colI)-multiplier*diag.getValueAt(row,colI));
                     result.setValueAt(rowI,colI,result.getValueAt(rowI,colI)-multiplier*result.getValueAt(row,colI));
-                }
-            }
-        }
-    }
-    return result;
-    for(int i=0; i<getRows(); i++){//recorre filas
-        for(int j=0; j<getColumns(); j++){//recorre columnas
-            const CNumber &currentVal = getValueAt(i, j);
-            if(i == j){//si i==j es parte de la diagonal, y si no es -1
-                result.setValueAt(i, j, CNumber(1,0));
-                for(int k=0; k<getColumns(); k++){
-                    diag.setValueAt(i,k,diag.getValueAt(i,k)/ currentVal);
-                }
-            }else{
-                if(currentVal.getReal() != 0){
-                    for(int h=0; h<getRows(); h++){
-                        for(int k=0; k<getColumns(); k++){
-                            if(h!=i){//no estoy en la fila que cambie por ultima vez a uno
-                                const CNumber &multi = result.getValueAt(h,j)/result.getValueAt(i,j);//que debo multiplicar para quitar el otro
-                                result.setValueAt(h,k,result.getValueAt(h,j)-multi);
-                                diag.setValueAt(h,k,diag.getValueAt(h,j)-multi)
-                            }
-                        }
-                    }
-                    diag.setValueAt(i,j, diag.getValueAt(i,j)-diag.getValueAt(i,j));
-                    result.setValueAt(i,j, currentVal-result.getValueAt(i,j));
                 }
             }
         }
