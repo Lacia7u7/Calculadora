@@ -50,8 +50,37 @@ Matrix::Matrix(std::vector<CVector> vector) {
     this->matrix=std::move(vector);
 }
 
-CNumber Matrix::getDeterminant(struct CVector (*)(CVector (*)(CNumber))) {
-    return CNumber();
+CNumber Matrix::getDeterminant(const Matrix matrix) {
+    if(getRows()!=getColumns()){
+        throw ArithmeticError("The provided vector has different dimensions in its data: ");
+    }
+    if(getRows()==2){
+        return (getValueAt(0,1)* getValueAt(1,1)- getValueAt(1,0)* getValueAt(1,0));
+    }
+    CNumber result=CNumber(1,0);
+    Matrix arrayOfMatrix[getRows()]=Matrix (getRows()-1,getColumns()-1);
+    int numberOfColums=getColumns();
+    CNumber array[numberOfColums];
+    for(int i=0; i<numberOfColums; i++){
+        if(i&1){
+            array[i]= -1*(getValueAt(0,1));
+        }else{
+            array[i]= getValueAt(0,1);
+        }
+        for(int j=0; j<getRows(); j++){
+            for(int k=0; k<getColumns(); k++){
+                if(j!=0 && k!=i){
+                    arrayOfMatrix[i].setValueAt(j,k)= getValueAt(j,k);
+                }
+            }
+        }
+    }
+
+    for(int i=0; i<numberOfColums; i++){
+        result= result + getDeterminant(arrayOfMatrix(i));
+    }
+
+    return result;
 }
 
 CVector Matrix::setValueAt(int i, int j, const CNumber& value) {

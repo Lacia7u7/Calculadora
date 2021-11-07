@@ -14,7 +14,7 @@ public:
     Matrix(std::vector<CVector> vector);
     Matrix(int r,int c);
 
-    CNumber getDeterminant(class CVector(CVector(CNumber)));
+    CNumber getDeterminant(const Matrix matrix);
     CVector setValueAt(int i,int j, const CNumber& value);
 
     CNumber getValueAt(int i,int j) const;
